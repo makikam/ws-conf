@@ -1,0 +1,22 @@
+<templateSet group="PHP">
+  <template name="tryf" value="try {&#10;$SELECTION$$END$&#10;    } finally {&#10;&#10;}" description="try {...} finally {}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tryc" value="try {&#10;$SELECTION$$END$&#10;} catch (Exception $e) {&#10;$END$&#10;}" description="try {...} catch(){...}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="t" value="$this-&gt;" description="$this-&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="tryfc" value="try {&#10;$SELECTION$$END$&#10;    } catch ( $e) {&#10;&#10;        } finally {&#10;&#10;        }" description="try {...} catch{} finally {}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
